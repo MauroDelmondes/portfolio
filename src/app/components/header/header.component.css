@@ -1,0 +1,13 @@
+header {
+  background-color: #1E1E1E;
+}
+
+.link {
+  color: #4C4C4C;
+  text-decoration: none;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=header.component.css.map */
