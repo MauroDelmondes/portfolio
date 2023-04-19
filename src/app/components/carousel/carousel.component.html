@@ -1,0 +1,10 @@
+<c-carousel [animate]="false" transition="crossfade">
+  <c-carousel-inner>
+    <c-carousel-item *ngFor="let slide of slides">
+      <c-carousel-caption class="d-none d-md-block">
+        <h3 class="slide-title">{{ slide.title }}</h3>
+        <p class="slide-text">{{ slide.subtitle }}</p>
+      </c-carousel-caption>
+    </c-carousel-item>
+  </c-carousel-inner>
+</c-carousel>
