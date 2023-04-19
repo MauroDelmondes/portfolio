@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 import { CarouselModule } from '@coreui/angular';
 
 import { AppComponent } from './app.component';
@@ -11,6 +14,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ExpansionPanelComponent } from './components/expansion-panel/expansion-panel.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     LandingPageComponent,
     AboutMeComponent,
     CarouselComponent,
+    ExperienceComponent,
+    ExpansionPanelComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +34,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     MatGridListModule,
     MatCardModule,
     CarouselModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
