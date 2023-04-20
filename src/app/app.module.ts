@@ -16,6 +16,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ExpansionPanelComponent } from './components/expansion-panel/expansion-panel.component';
+import { WorksComponent } from './components/works/works.component';
+import { WorkCardComponent } from './components/work-card/work-card.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { ExpansionPanelComponent } from './components/expansion-panel/expansion-
     CarouselComponent,
     ExperienceComponent,
     ExpansionPanelComponent,
+    WorksComponent,
+    WorkCardComponent,
   ],
   imports: [
     BrowserModule,
