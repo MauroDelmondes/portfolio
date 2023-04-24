@@ -1,34 +1,38 @@
 $background-color: #1E1E1E
 $card-background-color: #2A2A2A
-$font-color: #FFFFFF
+$font-color: #C0C0C0
 $secondary-font-color: #4C4C4C
 $highlight-color: #3A9FBF
 $alert-color: #FF5E5E
 $contrast-color: #E5E5E5
-$tertiary-font-color: #C0C0C0
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
 
-h1
-  font-size: 6.25rem
-  color: $secondary-font-color
+.contanct-container
+  align-items: center
+  display: flex
+  flex-direction: column
+
+.contact-title
+  font-size: 6rem
   margin: 0
+  color: $secondary-font-color
   font-family: 'Montserrat', sans-serif
 
-p
-  font-size: 2rem
-  color: $tertiary-font-color
-  margin: 0
+.contact-text
+  text-align: center
+  width: 25vw
+  color: $font-color
   font-family: 'Roboto', sans-serif
 
 .btn-container
   display: flex
   width: 35.5rem
   justify-content: space-between
-  margin-top: 4rem
 
 .btn
-  color: $tertiary-font-color !important
+  margin-top: 2rem
+  color: $font-color !important
   border-color: $contrast-color !important
   font-size: 2rem
   padding: 2.5rem 4rem !important

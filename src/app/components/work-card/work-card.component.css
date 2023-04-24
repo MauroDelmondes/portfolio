@@ -1,0 +1,64 @@
+.card-container {
+  width: 60vw;
+  background-color: #2A2A2A;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.card-content {
+  display: flex;
+}
+
+.card-img {
+  border-radius: 5px 0 0 5px;
+  width: 25vw;
+}
+
+.right-side {
+  margin-left: 2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #4C4C4C;
+}
+
+.card-description {
+  color: #C0C0C0;
+  width: 30vw;
+}
+
+.card-techs {
+  border-top: 1px solid #fff;
+  color: #C0C0C0;
+}
+
+.card-techs ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 !important;
+  padding: 1rem;
+}
+
+.card-techs ul li {
+  list-style-type: none;
+  margin-left: 2rem;
+}
+
+.card-buttons {
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+  border-top: 1px solid #fff;
+}
+
+.github-icon {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.card-buttons button {
+  border-color: #C0C0C0;
+  color: #C0C0C0;
+  margin-left: 2rem;
+}/*# sourceMappingURL=work-card.component.css.map */

@@ -2,12 +2,31 @@ header {
   background-color: #1E1E1E;
 }
 
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
 .link {
   color: #4C4C4C;
   text-decoration: none;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.link:hover {
+  color: #3A9FBF;
 }
 
 .right-menu {
   display: flex;
   flex-direction: row;
+}
+
+li {
+  list-style-type: none;
+  margin: 0 2rem;
 }/*# sourceMappingURL=header.component.css.map */

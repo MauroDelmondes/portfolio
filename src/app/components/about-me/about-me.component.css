@@ -1,0 +1,65 @@
+.about-me-section {
+  display: flex;
+  width: 75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-me-container {
+  width: 20vw;
+}
+
+.about-me-title {
+  color: #4C4C4C;
+  font-size: 3rem;
+}
+
+.about-me-text {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+.extra-contents-aside {
+  width: 25vw;
+}
+
+.tools-container, .achievements-container {
+  border: 2px solid #4C4C4C;
+  border-radius: 0.5rem;
+}
+
+.tools-title, .achievements-title {
+  position: relative;
+  top: -2rem;
+  left: 1rem;
+  color: #4C4C4C;
+  background-color: #1E1E1E;
+  width: 3.2rem;
+}
+
+.tool-list {
+  display: flex;
+  flex-direction: row;
+  top: -1.5rem;
+}
+
+.tool-img {
+  width: 3rem;
+}
+
+.achievements-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  height: 9rem;
+}
+
+.achievements-title {
+  width: 8rem;
+  height: 1rem;
+  margin-bottom: 0;
+}
+
+.carousel {
+  margin-left: 1rem;
+}/*# sourceMappingURL=about-me.component.css.map */

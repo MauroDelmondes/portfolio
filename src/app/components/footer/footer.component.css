@@ -1,0 +1,8 @@
+.footer-container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  width: 100vw;
+}/*# sourceMappingURL=footer.component.css.map */

@@ -1,0 +1,37 @@
+.contanct-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 6rem;
+  margin: 0;
+  color: #4C4C4C;
+}
+
+.contact-text {
+  text-align: center;
+  width: 25vw;
+  color: #C0C0C0;
+}
+
+.btn-container {
+  display: flex;
+  width: 35.5rem;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-top: 2rem;
+  color: #C0C0C0 !important;
+  border-color: #E5E5E5 !important;
+  font-size: 2rem;
+  padding: 2.5rem 4rem !important;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(229, 229, 229, 0.2);
+}/*# sourceMappingURL=contact.component.css.map */

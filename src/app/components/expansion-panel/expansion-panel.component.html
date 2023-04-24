@@ -1,13 +1,15 @@
 <mat-accordion class="example-headers-align">
   <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
     <mat-expansion-panel-header>
-      <mat-panel-title> Full Stack Developer </mat-panel-title>
+      <mat-panel-title class="panel-title">
+        Full Stack Developer
+      </mat-panel-title>
       <mat-panel-description> Derevo </mat-panel-description>
     </mat-expansion-panel-header>
 
-    <p>May - July 2022 | Cuiabá, Mato Grosso, Brasil</p>
+    <p class="date-location">May - July 2022 | Cuiabá, Mato Grosso, Brasil</p>
 
-    <p>
+    <p class="content-description">
       I worked in an ERP web project aimed at supermarket administration and
       management.
     </p>
@@ -27,7 +29,9 @@
 
   <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
     <mat-expansion-panel-header>
-      <mat-panel-title>Full Stack Developer</mat-panel-title>
+      <mat-panel-title class="panel-title"
+        >Full Stack Developer</mat-panel-title
+      >
       <mat-panel-description
         >Mato Grosso Information Technology Company - MTI</mat-panel-description
       >
@@ -50,7 +54,7 @@
 
   <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
     <mat-expansion-panel-header>
-      <mat-panel-title>Front-end Developer</mat-panel-title>
+      <mat-panel-title class="panel-title">Front-end Developer</mat-panel-title>
       <mat-panel-description
         >Liberali - SAP Gold Partner
       </mat-panel-description>

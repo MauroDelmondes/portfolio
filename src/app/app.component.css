@@ -1,1 +1,17 @@
-/*# sourceMappingURL=app.component.css.map */
+app-header {
+  position: fixed;
+  width: 100%;
+}
+
+.landing-page, .about-me, .experience, .works, .contact {
+  background-color: #1E1E1E;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+app-footer {
+  position: fixed;
+}/*# sourceMappingURL=app.component.css.map */

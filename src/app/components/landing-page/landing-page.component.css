@@ -1,0 +1,31 @@
+h1 {
+  font-size: 6.25rem;
+  color: #4C4C4C;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+  color: #C0C0C0;
+  margin: 0;
+}
+
+.btn-container {
+  display: flex;
+  width: 35.5rem;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.btn {
+  color: #C0C0C0 !important;
+  border-color: #E5E5E5 !important;
+  font-size: 2rem;
+  padding: 2.5rem 4rem !important;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(229, 229, 229, 0.2);
+}/*# sourceMappingURL=landing-page.component.css.map */

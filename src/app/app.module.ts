@@ -18,6 +18,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ExpansionPanelComponent } from './components/expansion-panel/expansion-panel.component';
 import { WorksComponent } from './components/works/works.component';
 import { WorkCardComponent } from './components/work-card/work-card.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { WorkCardComponent } from './components/work-card/work-card.component';
     ExpansionPanelComponent,
     WorksComponent,
     WorkCardComponent,
+    ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

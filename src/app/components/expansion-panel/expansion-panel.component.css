@@ -1,0 +1,14 @@
+.mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+.mat-expansion-panel {
+  width: 60vw;
+  color: #C0C0C0;
+  border: 2px solid #4C4C4C;
+  background-color: #1E1E1E;
+}
+
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
+  color: #4C4C4C;
+}/*# sourceMappingURL=expansion-panel.component.css.map */
