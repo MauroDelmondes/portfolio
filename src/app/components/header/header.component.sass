@@ -2,33 +2,81 @@ $background-color: #1E1E1E
 $font-color: #FFFFFF
 $secondary-font-color: #4C4C4C
 $highlight-color: #3A9FBF
+$menuBreakpoint: 860px
+$menuHeight: 1.75rem
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
-
-header
-  background-color: $background-color
 
 .header-nav
   display: flex
   flex-direction: row
   align-items: center
   justify-content: space-between
-  margin: 0 2rem
+  padding: 0 2rem
   font-family: 'Roboto', sans-serif
+  background-color: $background-color
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
 
-.link
+ul
+  display: flex
+  width: 100%
+  align-items: center
+  justify-content: space-between
+  flex-direction: row
+  padding: 0
+
+li
+  list-style-type: none
+
+#logo
+  margin: 0 !important
+
+.nav-link
   color: $secondary-font-color
   text-decoration: none
   transition: .4s
   transition-timing-function: ease-in-out
 
-.link:hover
+.nav-link:hover
   color: $highlight-color
 
-.right-menu
-  display: flex
-  flex-direction: row
+.burger
+  display: none
 
-li
-  list-style-type: none
-  margin: 0 2rem
+.menu
+  display: flex
+  align-items: center
+
+.menu a
+  padding-left:4rem
+
+
+@media (max-width: $menuBreakpoint)
+  .burger
+    display: block
+    color: $secondary-font-color
+
+  .burger:hover
+    color: $highlight-color
+
+  .menu
+    display: none
+    &.is-open
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: $menuHeight + 2
+      left: 0
+      width: 100vw
+      background: $background-color
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+
+  .menu a
+    width: 100vw
+    height: $menuHeight
+    line-height: $menuHeight
+    text-decoration: none
+    cursor: pointer
+    padding: 1rem 0 1rem 4rem

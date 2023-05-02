@@ -1,15 +1,19 @@
-<header>
-  <nav class="header-nav">
-    <a href="#landing-page" id="logo" class="link"
-      ><span>Mauro Delmondes</span></a
-    >
+<nav class="header-nav">
+  <ul>
+    <li>
+      <a href="#landing-page" id="logo" class="nav-link">Mauro Delmondes</a>
+    </li>
 
-    <ul class="right-menu">
-      <a href="#about-me" class="link"><li>About me</li></a>
-      <a href="#experience" class="link"><li>Experience</li></a>
-      <a href="#works" class="link"><li>Works</li></a>
-      <a href="#contact" class="link"><li>Contact</li></a>
-      <a href="#" class="link"><li>Resume</li></a>
-    </ul>
-  </nav>
-</header>
+    <li class="burger" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+
+    <li class="menu" [class.is-open]="isMenuOpen" (click)="toggleMenu()">
+      <a href="#about-me" class="nav-link">About me</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#works" class="nav-link">Works</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#" class="nav-link">Resume</a>
+    </li>
+  </ul>
+</nav>
