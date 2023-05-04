@@ -6,9 +6,19 @@ $highlight-color: #3A9FBF
 $alert-color: #FF5E5E
 $contrast-color: #E5E5E5
 
+.carousel
+    margin-top: -10px !important
+
 .slide-title
   color: $secondary-font-color
   margin-top: 0
 
 .slide-text
   color: $font-color
+
+@media (max-width: 450px)
+  .slide-title
+    font-size: 1rem
+
+  .slide-text
+    font-size: .9rem

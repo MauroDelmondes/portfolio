@@ -15,7 +15,7 @@ $contrast-color: #E5E5E5
   justify-content: space-between
 
 .about-me-container
-  width: 20vw
+  width: 23rem
 
 .about-me-title
   color: $secondary-font-color
@@ -28,7 +28,7 @@ $contrast-color: #E5E5E5
   font-family: 'Roboto', sans-serif
 
 .extra-contents-aside
-  width: 25vw
+  width: 30rem
 
 .tools-container, .achievements-container
   border: 2px solid $secondary-font-color
@@ -66,3 +66,70 @@ $contrast-color: #E5E5E5
 .carousel
   margin-left: 1rem
   font-family: 'Roboto', sans-serif
+
+@media (max-width: 1600px)
+  .about-me-section
+    width: 70rem
+
+  .about-me-container
+    width: 25rem
+
+  .extra-contents-aside
+    width: 26.25rem
+
+@media (max-width: 1300px)
+  .about-me-section
+    width: 60rem
+
+  .about-me-container
+    width: 20rem
+
+@media (max-width: 1100px)
+  .about-me-section
+    width: 50rem
+
+@media (max-width: 860px)
+  .about-me-section
+    flex-direction: column
+
+  .about-me-container
+    width: 31.25rem
+
+  .about-me-title
+    margin-bottom: 0
+
+  .about-me-text
+    text-align: justify
+    width: 31.25rem
+    margin-bottom: 3rem
+
+  .extra-contents-aside
+    width: 31.25rem
+
+  .achievements-container
+    margin-top: 2.5rem
+
+@media (max-width: 600px)
+  .about-me-container
+    width: 25rem
+
+  .about-me-title
+    font-size: 2rem
+
+  .about-me-text
+    font-size: 1rem
+    width: 25rem
+    margin-bottom: 2rem
+
+  .extra-contents-aside
+    width: 25rem
+
+@media (max-width: 450px)
+  .about-me-container
+    width: 20rem
+
+  .about-me-text
+    width: 20rem
+
+  .extra-contents-aside
+    width: 20rem
