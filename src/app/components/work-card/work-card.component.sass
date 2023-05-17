@@ -6,61 +6,148 @@ $highlight-color: #3A9FBF
 $alert-color: #FF5E5E
 $contrast-color: #E5E5E5
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+/* BEGIN CARD DESIGN */
+.card
+  display: inline-block
+  position: relative
+  width: 75rem
+  height: 25rem
+  border-radius: .5rem
+  overflow: hidden
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3)
+  margin: 1.875rem
 
-.card-container
-  width: 60vw
-  background-color: #2A2A2A
+
+.background-img
+  width: 100%
+
+
+.description-banner
+  background-image: linear-gradient(0deg, #1E1E1E00, #2A2A2AE0)
+  border-radius: 3.125rem
+  position: absolute
+  top: 55%
+  left: -3.125rem
+  height: 65%
+  width: 108%
+  transform: skew(19deg, -5deg)
+
+
+.github-logo
+  height: 5rem
+  width: 5rem
+  border-radius: 1.25rem
+  background-color: #fff
+  position: absolute
+  bottom: 25%
+  left: 1.875rem
+  overflow:hidden
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7)
+
+
+.github-logo img
+  height: 100%
+
+
+.description-title
+  position: absolute
+  color: #fff
+  font-weight: 900
+  left: 8.125rem
+  bottom: 25%
+
+
+.description-text
+  position: absolute
+  color: #fff
+  left: 8.125rem
+  width: 80%
+  bottom: 10%
+
+
+.description-btn
+  display: none
+  position: absolute
+  color: #fff
+  right: 1.875rem
+  bottom: 10%
+  padding: 0.625rem 1.25rem
+  border: 1px solid #fff
   border-radius: 5px
-  margin-bottom: 2rem
 
-.card-content
-  display: flex
 
-.card-img
-  border-radius: 5px 0 0 5px
-  width: 25vw
+.description-btn a
+  color: #fff
+  text-decoration: none
 
-.right-side
-  margin-left: 2rem
 
-.card-title
-  font-size: 1.5rem
-  color: $secondary-font-color
-  font-family: 'Montserrat', sans-serif
 
-.card-description
-  color: $font-color
-  width: 30vw
-  font-family: 'Roboto', sans-serif
+@media(max-width: 1320px)
+  .card
+    width: 60rem
 
-.card-techs
-  border-top: 1px solid #fff
-  color: $font-color
+  .description-banner
+    left: -2.5rem
 
-.card-techs ul
-  display: flex
-  justify-content: flex-end
-  margin: 0 !important
-  padding: 1rem
+  .description-text
+    bottom: 5%
 
-.card-techs ul li
-  list-style-type: none
-  margin-left: 2rem
-  font-family: 'Roboto', sans-serif
+@media(max-width: 1050px)
+  .card
+    width: 50rem
+    height: 24.5rem
 
-.card-buttons
-  display: flex
-  padding: 1rem
-  justify-content: flex-end
-  border-top: 1px solid #fff
+  .description-banner
+    left: -1.5rem
 
-.github-icon
-  width: 2rem
-  cursor: pointer
+@media(max-width: 890px)
+  .card
+    width: 40rem
+    height: 19rem
 
-.card-buttons button
-  border-color: $font-color
-  color: $font-color
-  margin-left: 2rem
-  font-family: 'Roboto', sans-serif
+  .description-banner
+    left: -1rem
+
+  .description-text
+    bottom: -2%
+    width: 75%
+
+@media(max-width: 720px)
+  .card
+    width: 25rem
+    height: 12rem
+
+  .description-banner
+    left: -1rem
+
+  .github-logo
+    height: 2.5rem
+    width: 2.5rem
+    border-radius: .8rem
+    bottom: 25%
+
+  .github-logo img
+    height: 100%
+
+  .description-title
+    bottom: 15%
+
+  .description-text
+    display: none
+
+@media(max-width: 480px)
+  .card
+    width: 15rem
+    height: 15rem
+
+  .background-img
+    object-fit: cover
+    width: 15rem
+    height: 15rem
+
+  .github-logo
+    bottom: 38%
+
+  .description-title
+    left: 4rem
+    bottom: 5%
